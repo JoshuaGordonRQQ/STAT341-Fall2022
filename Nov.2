@@ -1,0 +1,13 @@
+<pre><div class="text_to_html"># Author: Pawar, Date: Nov 2, 2022, Purpose: Chi-square analysis
+
+# Reading teh sample data
+
+data_frame &lt;- read.csv(&quot;<a href="https://goo.gl/j6lRXD&quot" class="_blanktarget">https://goo.gl/j6lRXD&quot</a>;)
+
+# Check the data counts
+
+table(data_frame$treatment, data_frame$improvement)
+
+chisq.test(data_frame$treatment, data_frame$improvement, correct=FALSE)
+
+</div></pre>
